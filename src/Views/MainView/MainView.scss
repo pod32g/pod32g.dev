@@ -4,6 +4,7 @@
     flex-direction: column;
     // margin-top: 3%;
     text-align: center;
+    min-height: 100vh;
 }
 
 .mainView {
@@ -51,5 +52,17 @@
     font-weight: 400;
     line-height: 1.2;
     text-transform: capitalize;
+  }
 }
+
+.hideScroll::-webkit-scrollbar {
+  display: none;
+}
+
+.hideScroll{
+  -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }

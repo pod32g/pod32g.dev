@@ -10,9 +10,9 @@ const Routes: IRoute[] = [
     },
     {
         name: 'About',
-        path: '/about',
+        path: 'aboutMe',
         visible: true,
-        component: About
+        scrollable: true
     },
     {
         name: 'Projects',
@@ -22,7 +22,7 @@ const Routes: IRoute[] = [
     {
         name: 'Blog',
         path: '/blog',
-        visible: false,
+        visible: true,
         component: Blog
     }
 ]
