@@ -63,9 +63,9 @@ export const MainView: FunctionComponent = () => {
                 <h1 className="title">I am <span className="font-weight-bold title">David Perez</span></h1>
                 <h4>Web developer @ Bosch</h4>
                 <div className="icons">
-                    <a href="https://github.com/pod32g/" target="_blank" rel="noopener noreferrer" className="icon"><FontAwesomeIcon icon={faGithub} color="white" size="lg" /></a>
-                    <a href="https://twitter.com/pod32g" target="_blank" rel="noopener noreferrer" className="icon"><FontAwesomeIcon icon={faTwitter} color="white" size="lg" /></a>
-                    <a href="https://www.linkedin.com/in/david-ivan-perez/" target="_blank" rel="noopener noreferrer" className="icon"><FontAwesomeIcon icon={faLinkedin} color="white" size="lg" /></a>
+                    <a href="https://github.com/pod32g/" target="_blank" rel="noopener noreferrer" className="icon"><FontAwesomeIcon className="fa_icon" icon={faGithub} color="white" size="3x" /></a>
+                    <a href="https://twitter.com/pod32g" target="_blank" rel="noopener noreferrer" className="icon"><FontAwesomeIcon className="fa_icon" icon={faTwitter} color="white" size="3x" /></a>
+                    <a href="https://www.linkedin.com/in/david-ivan-perez/" target="_blank" rel="noopener noreferrer" className="icon"><FontAwesomeIcon className="fa_icon" icon={faLinkedin} color="white" size="3x" /></a>
                 </div>
             </div>
             <section className="container-fluid" id="aboutMe">
