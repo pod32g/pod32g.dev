@@ -9,4 +9,5 @@ body > #root > div {
   background-color: #fff;
   font-family: 'Nunito', sans-serif;
   overflow-x: hidden;
+  overflow-y: hidden;
 }

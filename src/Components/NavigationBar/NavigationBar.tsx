@@ -9,8 +9,10 @@ export const NavigationBar: FunctionComponent = () => {
 
     const location = useLocation()
 
+    if (location.pathname === '/') return (<></>)
+
     return (
-        <Navbar collapseOnSelect expand="lg" className={`navbar navbar-expand-lg fixed-top navbar-dark navBar ${location.pathname !== '/' && ' bg-dark'}`}>
+        <Navbar collapseOnSelect expand="lg" className={`navbar navbar-expand-lg fixed-top navbar-dark navBar bg-dark`}>
             <div className="container">
                 <Navbar.Brand href="/">@pod32g</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -19,7 +21,9 @@ export const NavigationBar: FunctionComponent = () => {
                         {
                             Routes.map(el => {
                                 return (
-                                    el.visible && <Nav.Link active={location.pathname === el.path}><Link className="nav-link" to={el.path}>{el.name}</Link></Nav.Link>
+                                    el.visible && <Nav.Link active={location.pathname === el.path}>
+                                        <Link className="nav-link" to={el.path}>{el.name}</Link>
+                                    </Nav.Link>
                                 )
                             })
                         }
