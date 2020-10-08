@@ -71,6 +71,6 @@ export const MainView: FunctionComponent = () => {
             <section className="container-fluid" id="aboutMe">
                 <About />
             </section>
-        </div >
+        </div>
     )
 }
