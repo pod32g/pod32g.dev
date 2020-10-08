@@ -1,5 +1,5 @@
 import { IRoute } from "../Types/Route.types";
-import { About, Blog, MainView } from "../Views";
+import { Blog, MainView } from "../Views";
 
 const Routes: IRoute[] = [
     {
@@ -9,12 +9,6 @@ const Routes: IRoute[] = [
         component: MainView
     },
     {
-        name: 'About',
-        path: 'aboutMe',
-        visible: true,
-        scrollable: true
-    },
-    {
         name: 'Projects',
         path: '/projects',
         visible: false
@@ -22,7 +16,7 @@ const Routes: IRoute[] = [
     {
         name: 'Blog',
         path: '/blog',
-        visible: true,
+        visible: false,
         component: Blog
     }
 ]
