@@ -215,10 +215,6 @@
 </main>
 
 <style>
-	:global(body) {
-		padding: 0;
-	}
-
 	:global(.navigationBar) {
 		padding: 12px 0 !important;
 		transition: all 0.5s ease-in-out;
@@ -329,12 +325,21 @@
 		content: "";
 	}
 
-	:global(::-webkit-scrollbar) {
+	:global(body) {
+		padding: 0;
+	}
+
+	:global(*) {
+		scrollbar-width: thin;
+		scrollbar-color: #110b68 transparent;
+	}
+
+	:global(*::-webkit-scrollbar) {
 		width: 5px; /* Remove scrollbar space */
 		background: transparent; /* Optional: just make scrollbar invisible */
 	}
 
-	:global(::-webkit-scrollbar-thumb) {
+	:global(*::-webkit-scrollbar-thumb) {
 		background: #110b68;
 	}
 </style>
